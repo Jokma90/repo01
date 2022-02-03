@@ -1,0 +1,386 @@
+
+*{margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+body{
+  background: url(../images/background1.jpg) no-repeat;
+  font-family: montserrat;
+  height: 900px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* NEW NAV */
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+.topnav {
+   height: 60px;
+   color: white;
+}
+
+.topnav a {
+  float: left;
+  margin-top: 10px;
+  margin-right:30px;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 5px 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a {
+  top: 0;
+  position: center;
+}
+
+#right{
+  float: right;
+}
+
+.topnav a:hover {
+  background-color: BROWN;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: brown;
+  margin-top: 0px;
+  font-size: 20px;
+  height: 140px;
+  color: white;
+}
+
+.topnav a.active p{
+  margin-top: 10px;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/* NEW NAV */
+
+/* HOME BEGIN */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+    display: grid;
+    grid-gap: 1.6em;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.container>.header, .container>.content, .container>.sidebar, .container>div {
+    background: (27,31,34,0.80);
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.container>.header, .container> {
+    grid-column: 1/-1;
+    background: rgba(27,31,34,0.80);
+    color: black;
+}
+
+.container>.content {
+    grid-column: span 3;
+    grid-row: span 4;
+}
+.content>.article {
+    background: rgba(27,31,34,0.80);
+    padding: 20px;
+    margin-top: 5px;
+    color: rgba(27,31,34,0.80);
+}
+
+.content .article h1,
+.content .article p {
+    padding: 10px;
+}
+
+.container>.sidebar {
+    grid-column: span 2;
+    grid-row: span 4;
+    background: rgba(27,31,34,0.80);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .sidebar img {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.container>.related-post {
+    background: black;
+    color: #ffffff;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.container>.related-post:hover {
+    cursor: pointer;
+    color: brown;
+    background: brown;
+}
+
+img{
+  width: 100%;
+}
+}
+
+/* HOME END */
+
+
+/* LOCAL BEGIN */
+.video {
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  padding-top: 66.66%; /* 3:2 Aspect Ratio */
+}
+
+.video {
+  border: 10px solid (27,31,34,0.80);
+ }
+
+  
+.video-iframe {
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+/* LOCAL END */
+
+
+ /*PRODUCT BEGIN */
+
+.row{
+	display: flex;
+	padding: 10px;
+
+}
+
+.column{
+	flex: 5%;
+	padding: 30px;
+}
+
+.column1{
+  position: relative;
+  max-width: 800px; 
+  margin: 0 auto; 
+  text-align-last: center;
+}
+
+.column1 .text {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1; 
+  width: 100%; 
+  padding: 20px;
+
+}
+  
+img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+ /*PRODUCT END */
+
+/* CONTACT BEGIN */
+
+form{
+  background: rgba(27,31,34,0.80);
+  width: 800px;
+  margin: 50px auto;
+  max-width: 97%;
+  border-radius: 4px;
+  padding: 55px 30px;
+}
+
+form .title h2{
+  letter-spacing: 6px;
+  border-bottom: 1px solid white;
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-bottom: 32px;
+}
+
+form .half{
+  display: flex;
+  justify-content: space-between;
+}
+
+form .half .item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  width: 48%;
+}
+
+form label{
+  display: block;
+  font-size: 13px;
+  letter-spacing: 3.5px;
+  margin-bottom: 16px;
+}
+
+form .half .item input{
+  border-radius: 4px;
+  border: 1px solid white;
+  outline: 0;
+  padding: 16px;
+  width: 100%;
+  height: 44px;
+  background: transparent;
+  font-size: 17px;
+}
+
+form .full{
+  margin-bottom: 24px;
+}
+
+form .full textarea{
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid white;
+  outline: 0;
+  padding: 12px 16px;
+  width: 100%;
+  height: 200px;
+  font-size: 17px;
+}
+
+form .action{
+  margin-bottom: 32px;
+}
+
+form .action input{
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  height: 44px;
+  letter-spacing: 3px;
+  outline: 0;
+  padding: 0 20px 0 22px;
+  margin-right: 10px;
+}
+
+form .action input[type="submit"]{
+  background: white;
+  color: black;
+}
+
+form .icons a{
+  line-height: 56px;
+  text-align: center;
+  font-weight: 1200;
+  width: 80px;
+  margin-right: 15px;
+}
+
+form .half .item input:focus, form .full textarea:focus, form .action input[type="reset"]:hover, form .icons a:hover{
+  background: rgba(255,255,255,0.075);
+}
+
+@media (max-width: 480px){
+  form .half{
+    flex-direction: column;
+  }
+  form .half .item{
+    width: 100%;
+  }
+  form .action{
+    display: flex;
+    flex-direction: column;
+  }
+  form .action input{
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .map {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; 
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* CONTACT END */
+
+
